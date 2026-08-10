@@ -25,7 +25,7 @@ const SITE = {
 
   headshot: "images/Fraser_Headshot.jpg",
 
-  bio: `Fraser Wolfe is a Toronto/Vancouver based writer, director, and producer.
+  bio: `Fraser Wolfe is Toronto/Vancouver based filmmaker.
 He graduated from TMU's Image Arts Film
 program. He is still figuring out how to conclude this bio.
 
