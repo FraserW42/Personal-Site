@@ -1,0 +1,225 @@
+/* ============================================================
+   STYLES.CSS
+   Grayscale screenplay theme. All colours in the first block.
+   ============================================================ */
+
+:root{
+  --paper:  #F4F3F0;   /* page stock */
+  --ink:    #161614;   /* body text */
+  --mid:    #55554F;   /* secondary text */
+  --faint:  #8C8C85;   /* labels */
+  --rule:   #C9C8C2;   /* hairlines */
+  --link:       #1155CC;   /* clickable titles (classic hyperlink blue) */
+  --link-hover: #0D3E99;
+
+  /* screenplay pages run ~61 characters wide — in a monospace font
+     you can set that literally, which is why this is in ch not rem */
+  --measure: 66ch;
+  --pad: clamp(1.25rem, 5vw, 3rem);
+}
+
+*,*::before,*::after{ box-sizing:border-box; }
+
+html{ background:var(--paper); overscroll-behavior:none; }
+
+body{
+  margin:0;
+  min-height:100vh;
+  overscroll-behavior:none;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Courier Prime", "Courier New", Courier, monospace;
+  font-size:clamp(.95rem, .9rem + .25vw, 1.05rem);
+  line-height:1.75;
+}
+
+img{ display:block; max-width:100%; }
+a{ color:inherit; }
+
+.page{
+  max-width:var(--measure);
+  margin:0 auto;
+  padding:clamp(2.5rem, 8vh, 4.5rem) var(--pad) 5rem;
+}
+
+/* ---------- HEADER ---------- */
+.site-title{
+  margin:0;
+  font-size:clamp(1.1rem, 3.6vw, 1.45rem);
+  font-weight:700;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--ink);
+  min-height:1.6em;          /* stops the page jumping while it types */
+}
+/* the blinking cursor */
+.caret{
+  display:inline-block;
+  width:.58em; height:1.05em;
+  margin-left:.08em;
+  vertical-align:-.16em;
+  background:var(--ink);
+  animation:blink 1.05s step-end infinite;
+}
+@keyframes blink{ 50%{ opacity:0; } }
+
+.site-nav{
+  display:flex; gap:2rem;
+  margin:1.6rem 0 3rem;
+}
+.site-nav a{
+  font-size:.8rem; letter-spacing:.18em; text-transform:uppercase;
+  text-decoration:none; color:var(--faint);
+  transition:color .2s ease;
+}
+.site-nav a:hover, .site-nav a:focus-visible{ color:var(--ink); }
+.site-nav a.current{
+  color:var(--ink);
+  text-decoration:underline;
+  text-underline-offset:.35em;
+}
+
+.body-link{
+  text-decoration:underline;
+  text-underline-offset:.2em;
+  transition:opacity .2s ease;
+}
+.body-link:hover, .body-link:focus-visible{ opacity:.6; }
+
+/* ---------- WORK: single column ---------- */
+.piece{ margin:0 0 clamp(2.5rem, 7vw, 4rem); }
+
+/* fixed 16:9 box so the layout stays steady as pieces open/close */
+.stage{
+  position:relative;
+  width:100%; aspect-ratio:16/9;
+  background:#E4E3DE;
+  overflow:hidden;
+  border:1px solid var(--rule);
+}
+.still-btn{
+  display:block; width:100%; height:100%;
+  padding:0; margin:0; border:0; background:none;
+  cursor:pointer; font:inherit; color:inherit;
+}
+.still-btn img{
+  width:100%; height:100%; object-fit:cover;
+  transition:opacity .3s ease;
+}
+.still-btn:hover img, .still-btn:focus-visible img{ opacity:.82; }
+
+/* ---------- the slide-out details ---------- */
+.piece-details{
+  overflow:hidden;
+  max-height:0; opacity:0;
+  transition:max-height .5s ease, opacity .4s ease, margin .5s ease;
+}
+.piece.open .piece-details{
+  max-height:250rem; opacity:1; margin-top:1.35rem;
+}
+
+.piece-details h2{
+  margin:0 0 .35rem;
+  font-size:1.05rem; font-weight:700;
+  letter-spacing:.12em; text-transform:uppercase;
+  color:var(--ink); line-height:1.4;
+}
+
+/* the title, when it links to a trailer — classic hyperlink blue,
+   so it reads as a link the way any web link does */
+.piece-details h2 a{
+  color:var(--link);
+  text-decoration:underline;
+  text-decoration-thickness:1px;
+  text-underline-offset:.22em;
+  transition:color .2s ease;
+}
+.piece-details h2 a:hover,
+.piece-details h2 a:focus-visible{ color:var(--link-hover); }
+
+.piece-details .meta{
+  margin:0 0 1.25rem;
+  font-size:.78rem; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--faint);
+}
+.piece-details p{ margin:0 0 1rem; color:var(--ink); }
+
+/* labelled blocks, set like screenplay sluglines */
+.block{ margin-top:1.6rem; padding-top:1.2rem; }
+.block .label{
+  margin:0 0 .7rem;
+  font-size:.72rem; letter-spacing:.2em; text-transform:uppercase;
+  color:var(--faint);
+}
+.block p{ margin:0 0 .35rem; font-size:.9rem; color:var(--mid); }
+.block p:last-child{ margin-bottom:0; }
+
+.credits{ list-style:none; margin:0; padding:0; }
+.credits li{
+  display:flex; justify-content:space-between; gap:1.5rem;
+  padding:.22rem 0; font-size:.9rem;
+}
+.credits .k{ color:var(--faint); white-space:nowrap; }
+.credits .v{ text-align:right; color:var(--ink); }
+
+/* the caret that collapses it again */
+.caret-btn{
+  display:center; align-items:center; gap:.5rem;
+  margin:1.75rem 0 0; padding:.6rem 0 0;
+  width:100%;
+  border:0; border-top:1px solid var(--rule);
+  background:none; cursor:pointer;
+  font:inherit; font-size:.75rem;
+  letter-spacing:.2em; text-transform:uppercase;
+  color:var(--faint);
+  transition:color .2s ease;
+}
+.caret-btn:hover, .caret-btn:focus-visible{ color:var(--ink); }
+.caret-icon{ font-size:1rem; line-height:1; }
+
+/* ---------- PROFILE ---------- */
+.headshot{
+  width:clamp(7rem, 26vw, 10rem);
+  aspect-ratio:4/5; object-fit:cover;
+  margin:0 0 1.5rem;
+  border:1px solid var(--rule);
+}
+.role{
+  margin:0 0 2rem;
+  font-size:.78rem; letter-spacing:.2em; text-transform:uppercase;
+  color:var(--faint);
+}
+.bio p{ margin:0 0 1.2rem; }
+
+.contact{
+  margin-top:2.5rem; padding-top:1.5rem;
+  border-top:1px solid var(--ink);
+}
+.contact p{
+  display:flex; gap:1.5rem; margin:0 0 .5rem;
+  font-size:.9rem;
+}
+.contact .k{
+  min-width:7.5rem;
+  font-size:.72rem; letter-spacing:.2em; text-transform:uppercase;
+  color:var(--faint); padding-top:.2rem;
+}
+/* contact details are text, not links — this makes them easy to select */
+.contact .v{ color:var(--ink); user-select:all; }
+
+/* ---------- SMALL SCREENS ---------- */
+@media (max-width:540px){
+  :root{ --measure:100%; }
+  .credits li{ flex-direction:column; gap:.05rem; padding:.35rem 0; }
+  .credits .v{ text-align:left; }
+  .contact p{ flex-direction:column; gap:.1rem; margin-bottom:.9rem; }
+  .contact .k{ min-width:0; }
+  .site-nav{ gap:1.5rem; }
+}
+
+/* ---------- ACCESSIBILITY ---------- */
+:focus-visible{ outline:2px solid var(--ink); outline-offset:3px; }
+@media (prefers-reduced-motion:reduce){
+  *{ transition:none !important; animation:none !important; }
+  .caret{ opacity:1; }
+}
