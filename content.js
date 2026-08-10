@@ -118,7 +118,7 @@ High Park, Toronto.`,
   },
 
   {
-    title: "Mud Colored Face — Deap",
+    title: "Mud Colored Face",
     still: "images/MCF_thumbnail.png",
     video: "https://www.youtube.com/watch?v=x2DGjtzCG5A",
     meta: "Music Video · 2025 · 4 min · Producer",
