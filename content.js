@@ -76,7 +76,7 @@ boundaries of his friendship with Lucas.`,
   {
     title: "Between Late April and Early May",
     still: "images/BLAAEM_Thumbnail.png",
-    video: "https://vimeo.com/1216175552",
+    video: "https://vimeo.com/1216175552/2c5e1a7c95?share=copy&fl=sv&fe=ci",
     meta: "Short Film · 2026 · 8 min · Producer",
     description: `A short docu-fiction film that captures the oddities and
 absurdities of human behaviour during the annual cherry blossom bloom in
