@@ -120,7 +120,7 @@ High Park, Toronto.`,
 
   {
     title: "Mud Colored Face — Deap",
-    still: "images/MCF_Thumbnail.png",
+    still: "images/MCF_thumbnail.png",
     video: "https://www.youtube.com/watch?v=x2DGjtzCG5A",
     meta: "Music Video · 2025 · 4 min · Producer",
     description: `A music video for artist Deap.`,
