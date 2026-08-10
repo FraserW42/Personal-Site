@@ -25,10 +25,9 @@ const SITE = {
 
   headshot: "images/Fraser_Headshot.jpg",
 
-  bio: `Fraser Wolfe is a Toronto-Vancouver based writer, director, and producer.
-He holds a BFA from Toronto Metropolitan University's Image Arts: Film Studies
-program. He is interested in stories about the tiny awkwardnesses of everyday
-life, like writing introductions for yourself.
+  bio: `Fraser Wolfe is a Toronto/Vancouver based writer, director, and producer.
+He graduated from Toronto Metropolitan University's Image Arts: Film Studies
+program. He is still figuring out how to conclude this bio.
 
 [Check out his work here](index.html).`,
 
