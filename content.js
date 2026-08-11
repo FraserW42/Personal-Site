@@ -50,8 +50,8 @@ const WORKS = [
     still: "images/Buddies_Thumbnail.png",
     video: "https://vimeo.com/1214645742/c6a951b4b2?share=copy&fl=sv&fe=ci",
     meta: "Short Film · 2026 · 11 min · Writer/Director",
-    description: `Over a weekend of skiing, 14-year-old Aiden navigates the
-boundaries of his friendship with Lucas.`,
+    description: `Over a weekend of skiing, two 14-year-old boys navigate the
+boundaries of their friendship.`,
 
     // Optional
     awards: [
