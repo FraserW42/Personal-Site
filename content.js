@@ -83,6 +83,7 @@ absurdities of human behaviour during the annual cherry blossom bloom in
 High Park, Toronto.`,
     awards: [
       "Official Selection — Toronto International Film Festival 2026",
+      "Official Selection — Atlantic International Film Festival 2026",
       "Gold Winner — Young Director Award 2026",
     ],
     credits: [
