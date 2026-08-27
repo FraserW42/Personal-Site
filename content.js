@@ -56,6 +56,7 @@ boundaries of their friendship.`,
     // Optional
     awards: [
       "Toronto International Film Festival 2026 – Official Selection",
+      "Vancouver International Film Festival 2026 – Official Selection",
     ],
 
     // Optional
