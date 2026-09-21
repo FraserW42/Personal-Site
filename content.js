@@ -55,9 +55,9 @@ boundaries of their friendship.`,
 
     // Optional
     awards: [
-      "Toronto International Film Festival 2026 – Official Selection",
-      "Vancouver International Film Festival 2026 – Official Selection",
-      "Chilliwack Independent Film Festival 2026 – Official Selection",
+      "Toronto IFF 2026 – Official Selection",
+      "Vancouver IFF 2026 – Official Selection",
+      "Chilliwack IFF 2026 – Official Selection",
     ],
 
     // Optional
@@ -84,9 +84,9 @@ boundaries of their friendship.`,
 absurdities of human behaviour during the annual cherry blossom bloom in
 High Park, Toronto.`,
     awards: [
-      "Toronto International Film Festival 2026 – Official Selection",
-      "Atlantic International Film Festival 2026 – Official Selection",
-      "Chilliwack Independent Film Festival 2026 – Official Selection",
+      "Toronto IFF 2026 – Official Selection",
+      "Atlantic IFF 2026 – Official Selection",
+      "Chilliwack IFF 2026 – Official Selection",
       "Young Director Award 2026 – Gold Winner",
     ],
     credits: [
