@@ -86,6 +86,7 @@ High Park, Toronto.`,
     awards: [
       "Toronto International Film Festival 2026 – Official Selection",
       "Atlantic International Film Festival 2026 – Official Selection",
+      "Chilliwack Independent Film Festival 2026 – Official Selection",
       "Young Director Award 2026 – Gold Winner",
     ],
     credits: [
