@@ -57,6 +57,7 @@ boundaries of their friendship.`,
     awards: [
       "Toronto International Film Festival 2026 – Official Selection",
       "Vancouver International Film Festival 2026 – Official Selection",
+      "Chilliwack Independent Film Festival 2026 – Official Selection",
     ],
 
     // Optional
