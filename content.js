@@ -29,6 +29,8 @@ const SITE = {
 He graduated from TMU's Image Arts Film
 program. He is still figuring out how to conclude this bio.
 
+[Check out his work here](index.html).`,
+
 };
 
 
