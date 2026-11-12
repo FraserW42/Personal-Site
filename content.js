@@ -56,6 +56,7 @@ boundaries of their friendship.`,
       "Toronto International Film Festival 2026 – Official Selection",
       "Vancouver International Film Festival 2026 – Official Selection",
       "Chilliwack Independent Film Festival 2026 – Best Student Film, Best Performance",
+      "Toronto Met Film Fest 2026 – Best Director, Best Producer, Best Editor",
     ],
 
     // Optional
@@ -85,7 +86,7 @@ High Park, Toronto.`,
       "Toronto International Film Festival 2026 – Official Selection",
       "Atlantic International Film Festival 2026 – Official Selection",
       "Festival du nouveau cinéma 2026 – Official Selection",
-      "Chilliwack Independent Film Festival 2026 – Official Selection",
+      "Chilliwack Independent Film Festival 2026 – Best Director",
       "Young Director Award 2026 – Gold Winner",
     ],
     credits: [
