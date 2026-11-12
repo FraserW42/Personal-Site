@@ -53,10 +53,10 @@ boundaries of their friendship.`,
 
     // Optional
     awards: [
-      "Toronto International FF 2026 – Official Selection",
-      "Vancouver International FF 2026 – Official Selection",
-      "Chilliwack Independent FF 2026 – Best Student Film, Best Performance",
-      "Toronto Met FF 2026 – Best Director, Best Producer, Best Editor",
+      "Toronto International Film Festival 2026 – Official Selection",
+      "Vancouver International Film Festival 2026 – Official Selection",
+      "Chilliwack Independent Film Festival 2026 – Best Student Film, Best Performance",
+      "Toronto Met Film Fest 2026 – Best Director, Best Producer, Best Editor",
     ],
 
     // Optional
